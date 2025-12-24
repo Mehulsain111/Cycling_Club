@@ -9,7 +9,6 @@ const SignUpForm: React.FC = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState<string>("");
 
-  // 🔥 Lenis smooth scroll
   useEffect(() => {
     const lenis = new Lenis({
       smooth: true,
@@ -53,7 +52,6 @@ const SignUpForm: React.FC = () => {
         }}
         className="container shadow-lg signupbox"
       >
-        {/* rest of your JSX stays SAME */}
       </div>
     </div>
   );
