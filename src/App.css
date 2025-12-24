@@ -1,0 +1,385 @@
+/* * {
+  transition: all 0.6s;
+} */
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 72, 0.43),
+      rgba(0, 0, 255, 0.309)
+    ),
+    url("../public/black2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Poppins", sans-serif !important;
+}
+.dropdown-menu {
+  background-color: #24202e9e !important;
+  color: black !important;
+}
+.navbar {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.675),
+    rgba(0, 0, 0, 0.675)
+  ) !important;
+  position: fixed !important;
+  width: 100%;
+  z-index: 23;
+  margin-top: 0%;
+}
+.navbar ul li a {
+  color: aliceblue !important;
+}
+.form-group input {
+  margin-bottom: 15px;
+}
+.dropdown-item a {
+  color: black !important;
+}
+
+.divider-container {
+  position: relative;
+  margin-top: 15px;
+}
+
+.divider {
+  width: 40%;
+  display: inline-block;
+}
+
+.google-icon {
+  width: 25px;
+  margin-right: 10px;
+}
+.navbar-toggler {
+  background-color: aliceblue !important;
+  color: white !important;
+  padding: 20px;
+  border-radius: 50px !important;
+}
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  color: black !important;
+}
+.icon {
+  color: rgb(249, 221, 221);
+  font-size: 150%;
+  cursor: pointer;
+}
+.signupbox {
+  z-index: 22;
+  padding-block: 10px;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 15%;
+  background-image: linear-gradient(
+      to right,
+      rgba(6, 3, 60, 0.861),
+      rgba(70, 2, 2, 0.677)
+    ),
+    url("../public/cycle-handle.jpg");
+  width: 60% !important;
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+.form-group input {
+  border-radius: 20px;
+}
+
+.card2 {
+  background: linear-gradient(590deg, #24202e7a, #24202e);
+  color: white;
+  border-radius: 20px;
+  line-height: 200%;
+  height: 100%;
+}
+
+.card-body i {
+  font-size: 350%;
+  color: yellow;
+  padding-block: 15px;
+}
+.my-card {
+  margin-top: 10% !important;
+  font-size: small;
+  padding-inline: 10px;
+}
+.text-container {
+  font-family: sans-serif;
+  font-size: 240%;
+  font-weight: bold;
+  line-height: 1.2;
+  color: black;
+  font-style: italic; /* Added italic style */
+}
+
+.text-container p {
+  margin: 0;
+  font-family: sans-serif !important;
+}
+.icon-box i {
+  color: maroon;
+  font-size: 250%;
+  padding-right: 10px;
+}
+
+.icon-box h3 {
+  font-weight: bold;
+  color: black;
+  font-style: italic;
+}
+.image-container img {
+  transform: rotate(7deg);
+  width: 97%;
+  margin-block: 50px;
+  border-radius: 20px;
+}
+
+.form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.form-control::placeholder {
+  color: white !important;
+}
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.progress {
+  background-color: rgba(255, 255, 255, 0.679) !important;
+  height: 5px !important;
+  border-radius: 0% !important;
+  margin-bottom: 20px !important;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #ff0000 !important;
+  transition: width 1s ease-in-out;
+}
+.border-boxx {
+  border: 3px solid #24202e;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.233),
+    rgba(0, 0, 0, 0.138)
+  ) !important;
+  border-radius: 20px;
+  padding-inline: 20px;
+  text-align: justify;
+  font-size: small;
+}
+.footersection {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.612),
+      rgba(0, 0, 0, 0.578)
+    ),
+    url("../public/Footer.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.icons i {
+  background-color: red;
+  padding: 7px;
+  color: white;
+  border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    font-size: 90% !important;
+    color: white !important;
+  }
+
+  .navbar-brand img {
+    width: 60% !important;
+    margin-block: auto !important;
+  }
+  .jointoday {
+    margin: auto !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin-block: 5px !important;
+  }
+}
+.dropdown-item:hover {
+  background-color: black !important;
+  color: white !important;
+}
+.loginfooter {
+  width: 50%;
+}
+@media (max-width: 770px) {
+  .card {
+    width: 90% !important;
+  }
+  .card .input-group {
+    width: 100% !important;
+  }
+  .input-group-text{
+    padding: 10px !important;
+  }
+  .card .loginfooter {
+    width: 100%;
+    font-size: 70% !important  ;
+  }
+  .footersection .frist {
+    width: 50% !important;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    font-size: small;
+  }
+  .footersection .frist img {
+    margin-block: auto;
+    height: 100%;
+  }
+  .icons div {
+    width: 10%;
+    display: flex !important;
+    margin-inline: auto;
+    margin-left: 0%;
+  }
+  .footersection .secound {
+    width: 50% !important;
+    border-bottom: 1px solid white;
+    font-size: small;
+    border-right: none !important;
+  }
+  .footersection .fourth .time {
+    justify-content: center !important;
+  }
+  .footersection .secound li {
+    padding-top: 14px;
+  }
+  .footersection .thrid {
+    width: 50% !important;
+    font-size: small;
+    padding-top: 10px;
+  }
+
+  .footersection .thrid li {
+    padding-top: 10px;
+  }
+  .footersection .fourth {
+    width: 50% !important;
+    font-size: small;
+    padding-top: 10px;
+  }
+  .signupbox {
+    width: 100% !important;
+    font-size: small !important;
+  }
+  .signupbox input {
+    font-size: smaller;
+  }
+  .signupbox h1 {
+    font-size: medium;
+    padding-top: 10px !important;
+  }
+  .signupbox i {
+    font-size: 100%;
+    margin-top: 0%;
+    padding: 0% !important;
+    padding-right: 10px !important  ;
+  }
+}
+.custom-toggler {
+  border-color: #000 !important;
+  border: 1px solid #ffffff !important  ;
+  border-radius: 50% !important ;
+  padding-inline: 9px !important ;
+  padding-block: 7px !important ;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-color: white !important;
+}
+
+.custom-toggler {
+  background-color: black !important;
+  color: white !important;
+}
+
+.custom-toggler i {
+  color: white !important;
+}
+.card {
+  background: linear-gradient(
+      to right,
+      rgba(6, 3, 60, 0.861),
+      rgba(70, 2, 2, 0.677)
+    ),
+    url("../public/cycle-handle.jpg");
+  /* border: 2px dotted beige !important; */
+  background-size: 100% 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  border-radius: 20px !important;
+  position: fixed !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  width: 60%;
+  z-index: 222;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.input-group {
+  border: 2px solid skyblue;
+  border-radius: 20px;
+  width: 60% !important;
+}
+.input-group input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 65%;
+}
+.input-group .fa-user {
+  background: transparent;
+  border: none;
+  color: rgb(0, 166, 255);
+  align-items: center;
+}
+.input-group .fa-lock {
+  background: transparent;
+  border: none;
+  color: rgb(0, 166, 255);
+  align-items: center;
+}
+.loginbox input::placeholder {
+  color: rgb(0, 166, 255) !important;
+}
