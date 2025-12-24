@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import React, { useEffect, useState } from "react";
+import Lenis from "lenis";
 import google from "../../public/google_logo.png";
-import { useNavigate } from "react-router-dom";
 import user from "../../public/loginimg.png";
+import { useNavigate } from "react-router-dom";
 
 const SignUpForm: React.FC = () => {
+  const navigate = useNavigate();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState<string>("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     const lenis = new Lenis({
-      smooth: true,
       lerp: 0.1,
+      smoothWheel: true,
     });
 
     const raf = (time: number) => {
@@ -29,29 +31,24 @@ const SignUpForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Sign Up", { name, email, password });
-  };
-
-  const navigate = useNavigate();
-
-  const handleCross = () => {
-    navigate("/.");
-  };
-
-  const handleLogin = () => {
-    navigate("/login");
+    console.log({ name, email, password });
   };
 
   return (
     <div className="background-container">
-      <div
-        style={{
-          fontFamily: "poppins",
-          margin: "auto",
-          fontSize: "13px",
-        }}
-        className="container shadow-lg signupbox"
-      >
+      <div className="container signupbox shadow-lg">
+        <img src={user} alt="user" />
+        <form onSubmit={handleSubmit}>
+          <input value={name} onChange={(e) => setName(e.target.value)} />
+          <input value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <img src={google} alt="google" onClick={() => navigate("/login")} />
       </div>
     </div>
   );
